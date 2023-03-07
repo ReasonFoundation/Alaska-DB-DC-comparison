@@ -34,4 +34,6 @@ GetComparisonData <- function(Age = 31:60,
                                  PMT(r = PayoutRate, nper = LifeExpectancy - RetAge, pv = DCBalanceRev, t = 1) / 1.016725, 0)) %>%
     arrange(EmployeeType) %>%
     ungroup()
+  
+  return(Data)
 }
