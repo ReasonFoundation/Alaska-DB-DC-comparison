@@ -20,15 +20,17 @@ PMT0 <- function(r, nper, pv) {
     a <- pv*r*(1+r)^(nper-1)/((1+r)^nper-1)  
   }
   
-  # if(nper == 0){
-  #   a <- 0
-  # }
-  
+
   return(a)
 }
 
 #pmt = amo payment function with growth rate and timing added; t = 1 for end of period payment, 0.5 for half period. 
 PMT <- function(r, nper, pv, t = 1) {
+  #this is how you calculate an amo payment
   a <- PMT0(r, nper, pv*(1+r)^t)
   return(a)
 }
+
+
+#This is a test to practice git
+
