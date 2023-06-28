@@ -34,3 +34,5 @@ PMT <- function(r, nper, pv, t = 1) {
 
 #This is a test to practice git
 
+#This is another test on git
+
