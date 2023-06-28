@@ -20,7 +20,7 @@ PMT0 <- function(r, nper, pv) {
     a <- pv*r*(1+r)^(nper-1)/((1+r)^nper-1)  
   }
   
-
+# This is another test
   return(a)
 }
 
